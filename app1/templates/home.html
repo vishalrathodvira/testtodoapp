@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+        .navbar ul li {
+            display: inline;
+            color: white;
+            padding: 30px;
+            font-size: 30px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+
+        .navbar a:hover {
+            background-color: #04AA6D;
+
+        }
+        footer {
+  text-align: center;
+
+  
+  color: white;
+}
+footer a{ 
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+a:hover {
+            color: red;
+        }
+
+    </style>
+
 </head>
-<body>
-    <h1>home</h1>
+
+<body style="font-family: Garamond, serif;">
+
+    <div class="container" style="background:rgb(40,87,162);
+    background: linear-gradient(90deg, rgba(40,87,162,1) 30%, rgba(0,212,255,0.9640231092436975) 87%);">
+        <div>
+            <div class="row" style="background:rgb(40,87,162);
+        background: linear-gradient(90deg, rgba(40,87,162,1) 30%, rgba(0,212,255,0.9640231092436975) 87%);">
+
+                <!-- <nav class="navbar navbar-expand-lg navbar-danger" style="color: white; padding-left: 51px;">
+                <a class="navbar-brand" href="#" style="color: white;">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color: white;">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#" style="color: white;">Action</a>
+                                <a class="dropdown-item" href="#" style="color: white;">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" style="color: white;">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color: white;">Disabled</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </nav>  -->
+                <div class="navbar">
+                    <ul>
+                        <li class="active"> <a href="#">Home</a> </li>
+                        <li> <a href="#">About</a> </li>
+
+                        <li> <a href="#">Contact</a> </li>
+
+                        <li> <a href="#">Login</a> </li>
+                        <li> <a href="#">Signin</a> </li>
+
+
+                        <li> <button class="btn btn-outline-danger"> Get Started</button></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-6 mt-5">
+                    <div style="align-items: center;text-align: center;color: white;">
+                        <h1 style="padding-top: 63px;">Fly Make You Faster</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque maxime doloribus
+                            cupiditate nulla ducimus quia earum repellat distinctio non?</p><br>
+                        <button type="button" class="btn btn-success btn-lg">Large button</button>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-5 mt-5" style="background-color:white; padding: 40px;">
+                    <form style="float: inline-end; ">
+                        <div class="form-group bg-">
+
+                            <div class="row">
+                                <h1> Signup From</h1>
+                                <div class="col"><label for="exampleInputEmail1">*First
+                                        name</label>
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <label for="exampleInputEmail1">*Last name</label>
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <label for="exampleInputEmail1">*Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text">We'll never share your email with anyone
+                                else.</small><br>
+                            <label for="exampleInputEmail1">*Password</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Password">
+                        </div><br>
+
+                        <center>
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        </center>
+
+                    </form>
+
+                </div>
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                            <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                            <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                        d="M0,80L1440,10L2880,10L4320,60L5760,0L7200,80L8640,80L10080,80L11520,70L12960,70L14400,10L15840,10L17280,60L18720,30L20160,0L21600,50L23040,10L24480,10L25920,60L27360,10L28800,40L30240,20L31680,80L33120,70L34560,20L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z">
+                    </path>
+
+
+                </svg>
+
+
+
+            </div>
+
+            <div class="container mb-5" style="background-color: white;">
+                <h5 style="text-align: center; color: rgb(184, 218, 248);"><b>FEATURE</b></h5>
+                <h4 style="text-align: center;">All App</h4>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <center><img src="book.png" style="width: 25%;"></center>
+                        <h4 style="text-align: center; padding-top: 10px;">Manual Testing</h4>
+                        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Recusandae,
+                            tempora.</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <center> <img src="motorcycle.png" style="width: 25%;">
+
+                        </center>
+                        <h4 style="text-align: center; padding-top: 10px;">Fast Loading</h4>
+                        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Recusandae,
+                            tempora.</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <center><img src="infinity.png" style="width: 25%;">
+                        </center>
+                        <h4 style="text-align: center; padding-top: 10px;">Unlimited Posibility</h4>
+                        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Recusandae,
+                            tempora.</p>
+                    </div>
+                    <center>
+                        <button type="button" class="btn btn-primary btn-lg mt-5">Landing Page</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <footer style="padding-bottom: 10px;">
+            <h3><br>
+            <a href="#">© 2022 Vishal Rathod</a></h3>
+          </footer>
+    </div>
+    </div>
 </body>
+
 </html>
